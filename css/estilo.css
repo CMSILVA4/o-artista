@@ -2,19 +2,29 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #222;
-  color: #ddd;
+  background-color: #ddd;
+  color: #222;
   margin: 0;
   padding: 0;
 }
 
 header {
-  background-color: #444;
+  background-color: #ffffff;
   display: flex;
   align-items: center;
   padding: 10px 20px;
   justify-content: space-between;
 }
+header {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 40px; 
+  background-color: #fff;
+  padding: 10px 20px;
+  justify-content: space-around;
+}
+
 
 #logo img {
   height: 50px;
@@ -31,8 +41,8 @@ nav ul#menu {
 .item-menu .link-menu {
   display: inline-block;
   text-decoration: none;
-  color: #fff;
-  background-color: #555;
+  color: #fffefe;
+  background-color: #afacac;
   padding: 8px 12px;
   border-radius: 4px;
   font-weight: 600;
@@ -57,7 +67,7 @@ nav ul#menu {
 }
 
 main {
-  background-color: #333;
+  background-color: #222;
   padding: 20px;
   color: #ddd;
 }
@@ -69,11 +79,17 @@ h1, h2 {
   margin-bottom: 15px;
   color: #fff;
 }
-
 #principal {
   display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+  align-items: center; 
+  gap: 20px; 
+  flex-wrap: wrap; 
+  flex: 1;
+}
+
+#principal figure {
+  display: flex;
+  justify-content: center;
 
 }
 
@@ -82,12 +98,14 @@ h1, h2 {
   width: 100%;
   border-radius: 6px;
   object-fit: cover;
-  justify-content: center;
-  flex: 0;
 }
 
 #sec_ctd {
-  flex: 1;
+  flex: 2; 
+  text-align: center; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
 }
 
 #sec_ctd p {
@@ -97,10 +115,11 @@ h1, h2 {
 
 #second {
   display: flex;
-  gap: 15px;
-  justify-content: center;
+  gap: 10px;
+  justify-content: space-around;
   margin: 20px 0;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 #second .cartaz {
@@ -117,13 +136,15 @@ h1, h2 {
 }
 
 #second .cartaz img.capa {
-  width: 100%;
+  border-radius: 12px;
   display: block;
-  border-radius: 6px;
+  margin: 0 auto;
+  max-width: 100%;
+}
 }
 
 footer {
-  background-color: #333;
+  background-color: #ddd;
   color: #ddd;
   padding: 15px 20px;
   text-align: center;
@@ -213,19 +234,19 @@ main.m, section#acesso.m {
 
 #acesso a {
   display: inline-block;
-  background-color: #222;
+  background-color: #5b305a;
   color: #fff;
   padding: 10px 20px;
   border-radius: 6px;
+  font-family: 'Amatic SC', cursive;
   font-weight: 600;
   text-decoration: none;
   transition: background-color 0.3s ease;
 }
 
 #acesso a:hover {
-  background-color: #555;
+  background-color: #815080;
 }
-
 
 iframe {
   max-width: 100%;
@@ -256,4 +277,42 @@ iframe {
   #logo img {
     height: 40px;
   }
+}
+#descricao h3 {
+  width: 100%;
+  font-size: 1.4rem;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+#descricao ol,
+#descricao ul {
+  background-color: #fff;
+  color: #222;
+  padding: 20px;
+  border-radius: 8px;
+  list-style-position: inside;
+  width: fit-content;
+  min-width: 300px;
+  margin: 0;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
